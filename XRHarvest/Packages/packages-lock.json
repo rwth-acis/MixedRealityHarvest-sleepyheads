@@ -1,13 +1,11 @@
 {
   "dependencies": {
     "com.i5.toolkit.core": {
-      "version": "https://github.com/rwth-acis/i5-Toolkit-for-Unity.git#upm",
+      "version": "https://github.com/rwth-acis/i5-Toolkit-for-Unity.git#v1.1.0",
       "depth": 0,
       "source": "git",
-      "dependencies": {
-        "com.unity.textmeshpro": "1.5.1"
-      },
-      "hash": "cd5ddeb314668c5c67dabfaa1272073341c96908"
+      "dependencies": {},
+      "hash": "1c8ebf378a25b5ef4db7802c5858d66cac614d11"
     },
     "com.microsoft.mixedreality.toolkit.examples": {
       "version": "2.5.1",
