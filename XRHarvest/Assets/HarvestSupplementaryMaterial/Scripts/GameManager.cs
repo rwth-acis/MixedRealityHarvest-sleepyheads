@@ -67,7 +67,14 @@ public class GameManager : MonoBehaviour
     // Each frame, you can deduct the time that the frame took to render using Time.deltaTime
     // If remainingTime is equal to or less than 0, the game should be finished by calling FinishGame()
     // ================================================
-
+    private void Update()
+    {
+        RemainingTime -= Time.deltaTime;
+        if (RemainingTime <= 0)
+        {
+            FinishGame();
+        }
+    }
 
 
     // ================================================

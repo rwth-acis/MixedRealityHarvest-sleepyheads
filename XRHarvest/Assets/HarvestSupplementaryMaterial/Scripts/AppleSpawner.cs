@@ -26,7 +26,7 @@ public class AppleSpawner : MonoBehaviour
         // Therefore, disable the script immediately after the start
         // so that Update is not called until the game starts
         // ================================================
-
+        enabled = false;
 
         // ================================================
     }
@@ -91,7 +91,10 @@ public class AppleSpawner : MonoBehaviour
         // Clean up the apples by looping over all spawned instances of the spawner 
         // and destroy them using Destroy()
         // ================================================
-
+        foreach(var x in spawner.SpawnedInstances)
+        {
+            Destroy(x);
+        }
 
         // ================================================
     }
