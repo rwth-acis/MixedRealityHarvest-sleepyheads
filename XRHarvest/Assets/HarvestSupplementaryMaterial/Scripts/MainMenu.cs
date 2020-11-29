@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     // TODO: Task 2.3(e)
     // Add a field that allows you to assign the highscore label in the inspector
     // ================================================
-    public TextMeshPro score;
+
     // ================================================
 
     private void Start()
@@ -24,7 +24,7 @@ public class MainMenu : MonoBehaviour
         // TODO: Task 2.3(e)
         // Hide the menu by deactivating its gameobject
         // ================================================
-        gameObject.SetActive(false);
+
         // ================================================
     }
 
@@ -34,9 +34,7 @@ public class MainMenu : MonoBehaviour
         // Show the menu by activating its gameobject
         // also update the highscore label to reflect any changes
         // ================================================
-        UpdateHighscoreLabel();
-        gameObject.SetActive(true);
-        
+
         // ================================================
     }
 
@@ -46,10 +44,7 @@ public class MainMenu : MonoBehaviour
         // Update the highscore label's text to show
         // "Highscore: " followed by the value of the HighScore property in the GameManager
         // ================================================
-        if (score)
-        {
-            score.text = "Highscore: " + GameManager.Instance.HighScore;
-        }
+
         // ================================================
     }
 }
