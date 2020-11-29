@@ -34,9 +34,8 @@ public class MainMenu : MonoBehaviour
         // Show the menu by activating its gameobject
         // also update the highscore label to reflect any changes
         // ================================================
-        gameObject.SetActive(true);
         UpdateHighscoreLabel();
-        
+        gameObject.SetActive(true);
         
         // ================================================
     }
