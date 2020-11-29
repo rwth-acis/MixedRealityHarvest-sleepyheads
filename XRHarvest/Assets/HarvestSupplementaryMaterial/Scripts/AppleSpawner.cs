@@ -26,7 +26,7 @@ public class AppleSpawner : MonoBehaviour
         // Therefore, disable the script immediately after the start
         // so that Update is not called until the game starts
         // ================================================
-        enabled = false;
+
 
         // ================================================
     }
