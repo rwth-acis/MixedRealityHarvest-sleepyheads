@@ -91,10 +91,7 @@ public class AppleSpawner : MonoBehaviour
         // Clean up the apples by looping over all spawned instances of the spawner 
         // and destroy them using Destroy()
         // ================================================
-        foreach(var x in spawner.SpawnedInstances)
-        {
-            Destroy(x);
-        }
+
 
         // ================================================
     }
