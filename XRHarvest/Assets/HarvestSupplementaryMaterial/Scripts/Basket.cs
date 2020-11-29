@@ -35,7 +35,12 @@ public class Basket : MonoBehaviour
     // 2. Increment the GameManager's score (the GameManager singleton can be accessed using GameManager.Instance)
     // 3. Update the scoreLabel's text to the score that is kept by the GameManager
     // ================================================
-
+    private void OnTriggerEnter(Collider trigger)
+    {
+    	Destroy(trigger.gameObject);
+    	GameManager.Instance.Score++;
+    	scoreLabel	.text = GameManager.Instance.Score.ToString();
+    }
 
     // ================================================
 }
