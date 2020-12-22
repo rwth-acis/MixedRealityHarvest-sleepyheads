@@ -67,7 +67,7 @@ public class AppleSpawner : MonoBehaviour
         // ================================================
         if(spawner.Spawn())
         {
-            spawner.MostRecentlySpawnedObject.GetComponent<Transform>().position = GetSpawnPosition();
+            spawner.MostRecentlySpawnedObject.transform.position = GetSpawnPosition();
         }
         return;
 
