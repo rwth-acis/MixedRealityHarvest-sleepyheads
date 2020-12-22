@@ -65,7 +65,8 @@ public class AppleSpawner : MonoBehaviour
         // most recently spawned object and sets its position 
         // to a random position calculated by GetSpawnPosition()
         // ================================================
-        if(spawner.Spawn()){
+        if(spawner.Spawn())
+        {
             spawner.MostRecentlySpawnedObject.GetComponent<Transform>().position = GetSpawnPosition();
         }
         return;
